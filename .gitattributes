@@ -1,0 +1,8 @@
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf
+
+# Stop all files from being put in generated sources
+* export-ignore
+
+#Re-add below files to generated sources
+README.md -export-ignore
