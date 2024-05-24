@@ -7,3 +7,9 @@ This is the official public repository for Dungeoneer.
 3. Request features: [Currect Requests](https://github.com/Risenary-Studios/Dungeoneer-Public/labels/enhancement) [New Request](https://github.com/Risenary-Studios/Dungeoneer-Public/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=)
 4. Donations: [Paypal](https://www.paypal.com/donate/?hosted_button_id=UAZEZ5ADDK7SE)
 5. Wiki: WIP
+
+## WARNING
+Dungeoneer is still in an early prototype phase. Expect frequent world breakages between updates. If the game is not loading, try deleting the data folder.
+Windows: %APPDATA%\Godot\app_userdata\Dungeoneer
+macOS: ~/Library/Application Support/Godot/app_userdata/Dungeoneer
+Linux: ~/.local/share/godot/app_userdata/Dungeoneer
