@@ -9,7 +9,7 @@ This is the official public repository for Dungeoneer.
 5. Wiki: WIP
 
 ## WARNING
-Dungeoneer is still in an early prototype phase. Expect frequent world breakages between updates. If the game is not loading, try deleting the data folder.
-Windows: %APPDATA%\Godot\app_userdata\Dungeoneer
-macOS: ~/Library/Application Support/Godot/app_userdata/Dungeoneer
-Linux: ~/.local/share/godot/app_userdata/Dungeoneer
+Dungeoneer is still in an early prototype phase. Expect frequent world breakages between updates. If the game is not loading, try deleting the data folder.  
+Windows: %APPDATA%\Godot\app_userdata\Dungeoneer  
+macOS: ~/Library/Application Support/Godot/app_userdata/Dungeoneer  
+Linux: ~/.local/share/godot/app_userdata/Dungeoneer  
