@@ -16,6 +16,8 @@ jobs:
         uses: pozetroninc/github-action-get-latest-release@v0.8.0
         with:
           repository: ${{ github.repository }}
+      - name: Print release name
+        run: echo Publishing "${{ steps.get_release.outputs.release }}"
       - name: Publish release
         uses: eregon/publish-release@v1.0.6
         env:
