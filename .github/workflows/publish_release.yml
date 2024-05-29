@@ -12,6 +12,8 @@ jobs:
       - name: Get latest release
         id: get_release
         uses: pozetroninc/github-action-get-latest-release@v0.8.0
+        with:
+          repository: ${{ github.repository }}
       - name: Publish release
         uses: eregon/publish-release@v1.0.6
         with:
