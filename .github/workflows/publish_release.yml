@@ -13,9 +13,11 @@ jobs:
     steps:
       - name: Get latest release
         id: get_release
-        uses: pozetroninc/github-action-get-latest-release@v0.8.0
+        uses: rez0n/actions-github-release@v2.0
         with:
           repository: ${{ github.repository }}
+          type: latest
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Print release name
         run: echo Publishing "${{ steps.get_release.outputs.release }}"
       - name: Publish release
@@ -23,4 +25,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          release_id: ${{ steps.get_release.outputs.id }}
+          release_id: ${{ steps.get_release.outputs.release_id }}
