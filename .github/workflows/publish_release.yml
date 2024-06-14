@@ -2,7 +2,7 @@ name: Publish Release
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 23 * * FRI"
+    - cron: "45 22 * * FRI"
 
 jobs:
   publish:
