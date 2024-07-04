@@ -2,7 +2,7 @@ name: Publish Release
 on:
   workflow_dispatch:
   schedule:
-    - cron: "45 22 * * FRI"
+    - cron: "50 22 * * FRI"
 
 jobs:
   publish:
@@ -19,7 +19,9 @@ jobs:
           type: latest
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Print release name
-        run: echo Publishing "${{ steps.get_release.outputs.release }}"
+        run: |
+          echo Publishing "${{ steps.get_release.outputs.release }}"
+          sleep $(($(date -d "11:00pm" +%s) - $(date +%s)))
       - name: Publish release
         uses: eregon/publish-release@v1.0.6
         env:
